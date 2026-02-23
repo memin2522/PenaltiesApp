@@ -26,7 +26,6 @@ async function init() {
         <input type="checkbox" id="chk${index}">
         <label for="chk${index}"><b>${penalty.id}:</b> ${penalty.description}</label>
         </div>
-        <br>
     `;
     });
 }
