@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Nota</title>
+</head>
+
+<body>
+
+    <h2>Calculadora de Nota</h2>
+
+    <label>Corte:
+        <select id="period">
+            <option value="first">Primer Corte</option>
+            <option value="second">Segundo Corte</option>
+            <option value="third">Tercer Corte</option>
+        </select>
+    </label>
+
+    <br><br>
+
+    <label>Nota Rúbrica:
+        <input type="number" id="rubricScore" step="0.1" min="0" max="5">
+    </label>
+
+    <h3>Penalizaciones</h3>
+    <div id="penalties"></div>
+    <br>
+
+    <button id="btnCalculate">Calcular</button>
+    <pre id="result"></pre>
+    <script src="main.js"></script>
+</body>
+
+</html>

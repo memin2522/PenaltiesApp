@@ -1,0 +1,129 @@
+[
+    {
+        "id": "Penalización 1",
+        "description":"Error ortográfico (Por error)",
+        "first": -0.1,
+        "second": -0.1,
+        "third": -0.1
+    },
+    {
+        "id": "Penalización 2",
+        "description":"Uso de código en español",
+        "first": -0.2,
+        "second": -0.3,
+        "third": -0.3
+    },
+    {
+        "id": "Penalización 3",
+        "description":"Nombres de clases poco descriptivos o ambiguos",
+        "first": -0.4,
+        "second": -0.5,
+        "third": -0.6
+    },
+    {
+        "id": "Penalización 4",
+        "description":"Nombres de variables poco claros o sin relación con su propósito",
+        "first": -0.4,
+        "second": -0.5,
+        "third": -0.6
+    },
+    {
+        "id": "Penalización 5",
+        "description":"Comentarios irrelevantes o que no aportan al entendimiento del código",
+        "first": -0.2,
+        "second": -0.2,
+        "third": -0.3
+    },
+    {
+        "id": "Penalización 6",
+        "description":"Funciones con mas de una responsabilidad",
+        "first": -0.2,
+        "second": -0.3,
+        "third": -0.5
+    },
+    {
+        "id": "Penalización 7",
+        "description":"Clases, funciones o variables en el proyecto sin utilizar",
+        "first": -0.3,
+        "second": -0.3,
+        "third": -0.3
+    },
+    {
+        "id": "Penalización 8",
+        "description":"Clases excesivamente largas y/o con múltiples responsabilidades",
+        "first": -0.2,
+        "second": -0.3,
+        "third": -0.5
+    },
+    {
+        "id": "Penalización 9",
+        "description":"Código repetido",
+        "first": -0.2,
+        "second": -0.3,
+        "third": -0.5
+    },
+    {
+        "id": "Penalización 10",
+        "description":"Estructuras innecesariamente complejas o mal organizadas",
+        "first": -0.2,
+        "second": -0.3,
+        "third": -0.5
+    },
+    {
+        "id": "Penalización 11",
+        "description":"Ausencia de manejo de errores o excepciones",
+        "first": 0,
+        "second": -0.3,
+        "third": -0.5
+    },
+    {
+        "id": "Penalización 12",
+        "description":"Referencias innecesarias (Librerias, funciones, clases)",
+        "first": -0.2,
+        "second": -0.4,
+        "third": -0.6
+    },
+    {
+        "id": "Penalización 13",
+        "description":"Falta de modularización o estructura inadecuada del proyecto (Web o Unity)",
+        "first": -0.3,
+        "second": -0.5,
+        "third": -0.8
+    },
+    {
+        "id": "Penalización 14",
+        "description":"Código que no compila o errores basicos de ejecución",
+        "first": -1.5,
+        "second": -1.5,
+        "third": -1.5
+    },
+    {
+        "id": "Penalización 15",
+        "description":"Entrega tarde (Maximo 24 horas, mas tiempo se asume no entrega 0.0)",
+        "first": -1.5,
+        "second": -1.5,
+        "third": -1.5
+    },
+    {
+        "id": "Penalización 16",
+        "description":"El código contiene comentarios de IA",
+        "first": -1.5,
+        "second": -1.5,
+        "third": -1.5
+    },
+    {
+        "id": "Penalización 17",
+        "description":"El código contiene emojis",
+        "first": -1,
+        "second": -1,
+        "third": -1
+    },
+    {
+        "id": "Penalización 18",
+        "description":"El link de github esta en privado",
+        "first": -0.5,
+        "second": -0.5,
+        "third": -0.5
+    }
+    
+]
