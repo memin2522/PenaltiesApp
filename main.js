@@ -1,4 +1,4 @@
-let data = []; 
+let data = [];
 async function loadPenalties() {
     try {
         const response = await fetch('./penalties.json');
@@ -30,7 +30,7 @@ async function init() {
     });
 }
 
-document.getElementById("btnCalculate").addEventListener("click",() => {
+document.getElementById("btnCalculate").addEventListener("click", () => {
     const period = document.getElementById("period").value;
     let rubricScore = parseFloat(document.getElementById("rubricScore").value);
     let total = rubricScore;
@@ -47,6 +47,20 @@ document.getElementById("btnCalculate").addEventListener("click",() => {
 
     resultText += `Nota final: ${total.toFixed(1)}`;
     document.getElementById("result").textContent = resultText;
+});
+
+document.getElementById("copyBtn").addEventListener("click", async () => {
+    const text = document.getElementById("result").value;
+    try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = "Content copied";
+
+        setTimeout(() => {
+            copyBtn.textContent = "Copy";
+        }, 2000);
+    } catch (error) {
+        console.error("Copy failed:", error);
+    }
 });
 
 init();
