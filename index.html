@@ -3,38 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculadora de Penalizaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <h2>Calculadora de Penalizaciones</h2>
+    <main class="sheet">
 
-    <label>Corte:
-        <select id="period">
-            <option value="first">Primer Corte</option>
-            <option value="second">Segundo Corte</option>
-            <option value="third">Tercer Corte</option>
-        </select>
-    </label>
+        <header class="sheet__header">
+            <p class="sheet__eyebrow">Rúbrica de proyectos &middot; Ingeniería Multimedia</p>
+            <h1>Calculadora de penalizaciones</h1>
+        </header>
 
-    <br><br>
+        <section class="controls" aria-label="Parámetros de calificación">
 
-    <label>Nota Rúbrica:
-        <input type="number" id="rubricScore" step="0.1" min="0" max="5">
-    </label>
+            <div class="field">
+                <span class="field__label">Corte</span>
+                <div class="segmented" id="periodGroup" role="radiogroup" aria-label="Corte de evaluación">
+                    <label class="segmented__option">
+                        <input type="radio" name="period" value="first" checked>
+                        <span>Primer corte</span>
+                    </label>
+                    <label class="segmented__option">
+                        <input type="radio" name="period" value="second">
+                        <span>Segundo corte</span>
+                    </label>
+                    <label class="segmented__option">
+                        <input type="radio" name="period" value="third">
+                        <span>Tercer corte</span>
+                    </label>
+                </div>
+            </div>
 
-    <h3>Penalizaciones</h3>
-    <div id="penalties"></div>
-    <br>
+            <div class="field field--inline">
+                <label class="field__label" for="rubricScore">Puntaje rúbrica (sobre 100)</label>
+                <input type="number" id="rubricScore" step="0.1" min="0" max="100" placeholder="0.0">
+            </div>
 
-    <button id="btnCalculate">Calcular</button>
-    <br><br>
+        </section>
 
-    <textarea id="result" rows="10" cols="60"></textarea>
-    <br>
-    <button id="copyBtn">Copy</button>
-    
+        <section class="ledger" aria-label="Listado de penalizaciones">
+            <div class="ledger__head">
+                <h2>Penalizaciones</h2>
+                <span id="activeCount" class="ledger__count">0 seleccionadas</span>
+            </div>
+            <div id="penalties" class="ledger__list">
+                <p class="ledger__loading">Cargando penalizaciones&hellip;</p>
+            </div>
+        </section>
+
+        <section class="summary">
+            <button id="btnCalculate" class="btn btn--primary">Calcular nota final</button>
+        </section>
+
+        <section id="resultSection" class="result" hidden>
+            <div class="result__head">
+                <h2>Resultado</h2>
+                <button id="copyBtn" class="btn btn--ghost">Copiar</button>
+            </div>
+            <textarea id="result" class="result__text" rows="10" readonly></textarea>
+        </section>
+
+    </main>
+
     <script src="main.js"></script>
 </body>
 

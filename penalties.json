@@ -1,129 +1,149 @@
 [
     {
         "id": "Penalización 1",
-        "description":"Error ortográfico (Por error)",
-        "first": -0.1,
-        "second": -0.1,
-        "third": -0.1
+        "description": "Código en español: uso de identificadores (variables, funciones, clases) en español. No aplica a comentarios ni a elementos visibles por el usuario.",
+        "first": -4.0,
+        "second": -6.0,
+        "third": -8.0
     },
     {
         "id": "Penalización 2",
-        "description":"Uso de código en español",
-        "first": -0.2,
-        "second": -0.3,
-        "third": -0.3
+        "description": "Código desordenado: indentación inconsistente o ausente, espaciado irregular, líneas en blanco innecesarias, o inconsistencia en convenciones de nombres.",
+        "first": -4.0,
+        "second": -6.0,
+        "third": -8.0
     },
     {
         "id": "Penalización 3",
-        "description":"Nombres de clases poco descriptivos o ambiguos",
-        "first": -0.4,
-        "second": -0.5,
-        "third": -0.6
+        "description": "Nombres de clases poco descriptivos: el nombre no comunica la responsabilidad de la clase o es ambiguo respecto a otras clases del proyecto.",
+        "first": -6.0,
+        "second": -8.0,
+        "third": -10.0
     },
     {
         "id": "Penalización 4",
-        "description":"Nombres de variables poco claros o sin relación con su propósito",
-        "first": -0.4,
-        "second": -0.5,
-        "third": -0.6
+        "description": "Nombres de variables poco claros: el nombre no refleja el dato que almacena ni su propósito dentro del código.",
+        "first": -6.0,
+        "second": -8.0,
+        "third": -10.0
     },
     {
         "id": "Penalización 5",
-        "description":"Comentarios irrelevantes o que no aportan al entendimiento del código",
-        "first": -0.2,
-        "second": -0.2,
-        "third": -0.3
+        "description": "Comentarios irrelevantes: repiten literalmente lo que el código ya expresa, están desactualizados, o no aportan contexto útil.",
+        "first": -4.0,
+        "second": -5.0,
+        "third": -6.0
     },
     {
         "id": "Penalización 6",
-        "description":"Funciones con mas de una responsabilidad",
-        "first": -0.2,
-        "second": -0.3,
-        "third": -0.5
+        "description": "Endpoints REST con verbo en la ruta: el nombre del endpoint referencia una acción en lugar de un recurso.",
+        "first": -2.0,
+        "second": -6.0,
+        "third": -8.0
     },
     {
         "id": "Penalización 7",
-        "description":"Clases, funciones o variables en el proyecto sin utilizar",
-        "first": -0.3,
-        "second": -0.3,
-        "third": -0.3
+        "description": "Funciones con múltiples responsabilidades: una misma función ejecuta más de una tarea lógica independiente.",
+        "first": -4.0,
+        "second": -6.0,
+        "third": -10.0
     },
     {
         "id": "Penalización 8",
-        "description":"Clases excesivamente largas y/o con múltiples responsabilidades",
-        "first": -0.2,
-        "second": -0.3,
-        "third": -0.5
+        "description": "Clases sobrecargadas: una clase concentra funciones que deberían dividirse, o excede una extensión razonable para su propósito.",
+        "first": -2.0,
+        "second": -4.0,
+        "third": -6.0
     },
     {
         "id": "Penalización 9",
-        "description":"Código repetido",
-        "first": -0.2,
-        "second": -0.3,
-        "third": -0.5
+        "description": "Estructuras innecesariamente complejas: anidamientos excesivos, lógica simplificable, o soluciones sobrediseñadas.",
+        "first": -4.0,
+        "second": -6.0,
+        "third": -8.0
     },
     {
         "id": "Penalización 10",
-        "description":"Estructuras innecesariamente complejas o mal organizadas",
-        "first": -0.2,
-        "second": -0.3,
-        "third": -0.5
+        "description": "Falta de modularización del proyecto: ausencia de organización clara en carpetas o módulos que separe las capas o componentes del sistema.",
+        "first": -4.0,
+        "second": -6.0,
+        "third": -10.0
     },
     {
         "id": "Penalización 11",
-        "description":"Ausencia de manejo de errores o excepciones",
-        "first": 0,
-        "second": -0.3,
-        "third": -0.5
+        "description": "Elementos sin utilizar: clases, funciones o variables declaradas que no son invocadas ni referenciadas en ninguna parte del código.",
+        "first": -4.0,
+        "second": -6.0,
+        "third": -8.0
     },
     {
         "id": "Penalización 12",
-        "description":"Referencias innecesarias (Librerias, funciones, clases)",
-        "first": -0.2,
-        "second": -0.4,
-        "third": -0.6
+        "description": "Código repetido: bloques de lógica duplicados que podrían extraerse a una función o clase común.",
+        "first": -6.0,
+        "second": -8.0,
+        "third": -10.0
     },
     {
         "id": "Penalización 13",
-        "description":"Falta de modularización o estructura inadecuada del proyecto (Web o Unity)",
-        "first": -0.3,
-        "second": -0.5,
-        "third": -0.8
+        "description": "Referencias innecesarias: librerías, funciones o clases importadas que no son utilizadas por el código.",
+        "first": -4.0,
+        "second": -8.0,
+        "third": -12.0
     },
     {
         "id": "Penalización 14",
-        "description":"Código que no compila o errores basicos de ejecución",
-        "first": -1.5,
-        "second": -1.5,
-        "third": -1.5
+        "description": "Ausencia de manejo de errores: el código no contempla el manejo de excepciones o errores esperables.",
+        "first": 0.0,
+        "second": -4.0,
+        "third": -6.0
     },
     {
         "id": "Penalización 15",
-        "description":"Entrega tarde (Maximo 24 horas, mas tiempo se asume no entrega 0.0)",
-        "first": -1.5,
-        "second": -1.5,
-        "third": -1.5
+        "description": "Hardcoding de valores configurables: rutas, credenciales, URLs o constantes mágicas escritas directamente en el código.",
+        "first": -2.0,
+        "second": -6.0,
+        "third": -8.0
     },
     {
         "id": "Penalización 16",
-        "description":"El código contiene comentarios de IA",
-        "first": -1.5,
-        "second": -1.5,
-        "third": -1.5
+        "description": "Ausencia de validación de datos de entrada: el código procesa datos sin verificar previamente formato, tipo o presencia.",
+        "first": -4.0,
+        "second": -6.0,
+        "third": -8.0
     },
     {
         "id": "Penalización 17",
-        "description":"El código contiene emojis",
-        "first": -1,
-        "second": -1,
-        "third": -1
+        "description": "Código que no compila: el proyecto no compila, no ejecuta, o presenta errores básicos que impiden su funcionamiento.",
+        "first": -20.0,
+        "second": -20.0,
+        "third": -20.0
     },
     {
         "id": "Penalización 18",
-        "description":"El link de github esta en privado",
-        "first": -0.5,
-        "second": -0.5,
-        "third": -0.5
+        "description": "Comentarios de IA: el código contiene comentarios generados por herramientas de inteligencia artificial, no solicitados ni propios del estilo del estudiante.",
+        "first": -30.0,
+        "second": -30.0,
+        "third": -30.0
+    },
+    {
+        "id": "Penalización 19",
+        "description": "Emojis en el código: el código contiene emojis en identificadores, comentarios o cadenas de texto internas, incluyendo elementos de interfaz que debieran usar íconos.",
+        "first": -30.0,
+        "second": -30.0,
+        "third": -30.0
+    },
+    {
+        "id": "Penalización 20",
+        "description": "Repositorio de GitHub en privado: el enlace compartido no tiene permisos de visualización pública o para el docente.",
+        "first": -2.0,
+        "second": -4.0,
+        "third": -6.0
+    },
+    {
+        "id": "Penalización 21",
+        "description": "Control de versiones inadecuado: commits sin información descriptiva del cambio, o proyecto subido en carpetas anidadas en lugar de la raíz del repositorio.",
+        "first": -2.0,
+        "second": -4.0,
+        "third": -6.0
     }
-    
 ]
